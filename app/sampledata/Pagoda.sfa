@@ -1,0 +1,55 @@
+{
+   bound_relative_root: {
+      x: 0.5,
+      y: 0,
+      z: 0.5,
+   },
+   materials: [
+      {
+         name: "lambert2SG",
+         parameters: [
+            {
+               baseColor: "Pagoda_BaseColor",
+            },
+            {
+               baseColorTint: [
+                  0.5,
+                  0.5,
+                  0.5,
+                  1,
+               ],
+            },
+            {
+               metallic: 0,
+            },
+            {
+               roughness: 1,
+            },
+            {
+               opacity: null,
+            },
+         ],
+         source: "build/sceneform_sdk/default_materials/obj_material.sfm",
+      },
+   ],
+   model: {
+      attributes: [
+         "Position",
+         "TexCoord",
+         "Orientation",
+      ],
+      collision: {},
+      file: "sampledata/Pagoda.obj",
+      name: "Pagoda",
+      recenter: "root",
+      scale: 0.037862,
+   },
+   samplers: [
+      {
+         file: "sampledata/Pagoda_BaseColor.png",
+         name: "Pagoda_BaseColor",
+         pipeline_name: "Pagoda_BaseColor.png",
+      },
+   ],
+   version: "0.52:1",
+}

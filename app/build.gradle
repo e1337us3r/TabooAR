@@ -1,0 +1,198 @@
+apply plugin: 'com.android.application'
+
+apply plugin: 'kotlin-android'
+
+apply plugin: 'kotlin-android-extensions'
+
+apply plugin: 'com.google.ar.sceneform.plugin'
+
+android {
+    compileSdkVersion 28
+    defaultConfig {
+        applicationId "com.apolets.tabooar"
+        minSdkVersion 26
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation"org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
+    implementation 'com.android.support:appcompat-v7:28.0.0-rc02'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+
+    implementation "com.google.ar.sceneform.ux:sceneform-ux:1.4.0"
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    implementation 'com.android.support:cardview-v7:28.0.0-rc02'
+}
+
+
+
+sceneform.asset('sampledata/Knife.obj',
+        'default',
+        'sampledata/Knife.sfa',
+        'src/main/assets/Knife')
+
+sceneform.asset('sampledata/Astronaut.obj',
+        'default',
+        'sampledata/Astronaut.sfa',
+        'src/main/assets/Astronaut')
+
+sceneform.asset('sampledata/Bazooka.obj',
+        'default',
+        'sampledata/Bazooka.sfa',
+        'src/main/assets/Bazooka')
+
+sceneform.asset('sampledata/Book.obj',
+        'default',
+        'sampledata/Book.sfa',
+        'src/main/assets/Book')
+
+sceneform.asset('sampledata/Cactus.obj',
+        'default',
+        'sampledata/Cactus.sfa',
+        'src/main/assets/Cactus')
+
+sceneform.asset('sampledata/Cell_Phone.obj',
+        'default',
+        'sampledata/Cell_Phone.sfa',
+        'src/main/assets/Cell_Phone')
+
+
+sceneform.asset('sampledata/Coffee.obj',
+        'default',
+        'sampledata/Coffee.sfa',
+        'src/main/assets/Coffee')
+
+sceneform.asset('sampledata/Eagle.obj',
+        'default',
+        'sampledata/Eagle.sfa',
+        'src/main/assets/Eagle')
+
+sceneform.asset('sampledata/Earth.obj',
+        'default',
+        'sampledata/Earth.sfa',
+        'src/main/assets/Earth')
+
+sceneform.asset('sampledata/Elephant.obj',
+        'default',
+        'sampledata/Elephant.sfa',
+        'src/main/assets/Elephant')
+
+sceneform.asset('sampledata/Fire_Truck.obj',
+        'default',
+        'sampledata/Fire_Truck.sfa',
+        'src/main/assets/Fire_Truck')
+
+
+sceneform.asset('sampledata/Fishing_Boat.obj',
+        'default',
+        'sampledata/Fishing_Boat.sfa',
+        'src/main/assets/Fishing_Boat')
+
+sceneform.asset('sampledata/Fox.obj',
+        'default',
+        'sampledata/Fox.sfa',
+        'src/main/assets/Fox')
+
+sceneform.asset('sampledata/Gramophone.obj',
+        'default',
+        'sampledata/Gramophone.sfa',
+        'src/main/assets/Gramophone')
+
+
+sceneform.asset('sampledata/Hamburger.obj',
+        'default',
+        'sampledata/Hamburger.sfa',
+        'src/main/assets/Hamburger')
+
+sceneform.asset('sampledata/Harbor.obj',
+        'default',
+        'sampledata/Harbor.sfa',
+        'src/main/assets/Harbor')
+
+sceneform.asset('sampledata/Hot_Dog.obj',
+        'default',
+        'sampledata/Hot_Dog.sfa',
+        'src/main/assets/Hot_Dog')
+
+sceneform.asset('sampledata/Island.obj',
+        'default',
+        'sampledata/Island.sfa',
+        'src/main/assets/Island')
+
+sceneform.asset('sampledata/Keyboard.obj',
+        'default',
+        'sampledata/Keyboard.sfa',
+        'src/main/assets/Keyboard')
+
+sceneform.asset('sampledata/Microscope.obj',
+        'default',
+        'sampledata/Microscope.sfa',
+        'src/main/assets/Microscope')
+
+sceneform.asset('sampledata/Muscle_Car.obj',
+        'default',
+        'sampledata/Muscle_Car.sfa',
+        'src/main/assets/Muscle_Car')
+
+sceneform.asset('sampledata/Pagoda.obj',
+        'default',
+        'sampledata/Pagoda.sfa',
+        'src/main/assets/Pagoda')
+
+sceneform.asset('sampledata/Paper_Airplane.obj',
+        'default',
+        'sampledata/Paper_Airplane.sfa',
+        'src/main/assets/Paper_Airplane')
+
+sceneform.asset('sampledata/R2-D2.obj',
+        'default',
+        'sampledata/R2-D2.sfa',
+        'src/main/assets/R2-D2')
+
+sceneform.asset('sampledata/Space_Shuttle.obj',
+        'default',
+        'sampledata/Space_Shuttle.sfa',
+        'src/main/assets/Space_Shuttle')
+
+sceneform.asset('sampledata/Sword.obj',
+        'default',
+        'sampledata/Sword.sfa',
+        'src/main/assets/Sword')
+
+sceneform.asset('sampledata/Telescope.obj',
+        'default',
+        'sampledata/Telescope.sfa',
+        'src/main/assets/Telescope')
+
+
+sceneform.asset('sampledata/Train.obj',
+        'default',
+        'sampledata/Train.sfa',
+        'src/main/assets/Train')
+
+sceneform.asset('sampledata/Treasure_Chest.obj',
+        'default',
+        'sampledata/Treasure_Chest.sfa',
+        'src/main/assets/Treasure_Chest')
+
+sceneform.asset('sampledata/TV_Remote.obj',
+        'default',
+        'sampledata/TV_Remote.sfa',
+        'src/main/assets/TV_Remote')

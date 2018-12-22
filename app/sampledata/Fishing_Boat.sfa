@@ -1,0 +1,55 @@
+{
+   bound_relative_root: {
+      x: 0.5,
+      y: 0,
+      z: 0.5,
+   },
+   materials: [
+      {
+         name: "lambert3SG",
+         parameters: [
+            {
+               baseColor: "Boat texture",
+            },
+            {
+               baseColorTint: [
+                  1,
+                  1,
+                  1,
+                  1,
+               ],
+            },
+            {
+               metallic: 0,
+            },
+            {
+               roughness: 1,
+            },
+            {
+               opacity: null,
+            },
+         ],
+         source: "build/sceneform_sdk/default_materials/obj_material.sfm",
+      },
+   ],
+   model: {
+      attributes: [
+         "Position",
+         "TexCoord",
+         "Orientation",
+      ],
+      collision: {},
+      file: "sampledata/Fishing_Boat.obj",
+      name: "Fishing_Boat",
+      recenter: "root",
+      scale: 0.0024390000000000002,
+   },
+   samplers: [
+      {
+         file: "sampledata/Boat texture.png",
+         name: "Boat texture",
+         pipeline_name: "Boat texture.png",
+      },
+   ],
+   version: "0.52:1",
+}
